@@ -103,6 +103,7 @@ while True:
             cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 1)
             cv2.putText(img, "Unknown", (x1 + 20, y2 - 20), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 1)
             # print()
+            
     img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
     img = cv2.resize(img, (1024, 720))
     cv2.imshow('Webcam', img)
