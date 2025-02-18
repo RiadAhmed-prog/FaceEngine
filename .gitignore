@@ -5,5 +5,42 @@ __pycache__/
 .idea/
 *.pyc
 *~
+# Ignore all checkpoint directories recursively
+checkpoint/
+**/checkpoint/
+# Ignore PyTorch model checkpoints
+*.pth
+*.pt
+# Ignore compiled model files
+*.pt         # PyTorch models
+*.pth        # PyTorch weights
+*.onnx       # ONNX models
+*.h5         # TensorFlow/Keras models
+checkpoint   # TensorFlow checkpoint directory
+*.ckpt       # TensorFlow checkpoints
 
+# TensorBoard log files
+logs/
+events.out.tfevents.*
 
+# Pickle and serialized objects
+*.pkl
+*.pickle
+*.joblib
+
+# Machine learning datasets and results
+data/
+dataset/
+*.csv
+*.tsv
+*.json
+*.hdf5
+*.h5
+*.npz
+*.npy
+
+# Ignore large files stored separately
+models/
+weights/
+output/
+results/
